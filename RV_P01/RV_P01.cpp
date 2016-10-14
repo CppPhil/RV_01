@@ -8,6 +8,7 @@
 #include <gtk.h>
 #include <ltiGtkServer.h>
 #include "utils.h" // app::keepWindowOpen
+#include "Median.h" // app::median
 #include "RV_P01.h"
 
 namespace app {
@@ -25,7 +26,7 @@ namespace app {
         lti::splitImageToHSI splitter;
 
         // TODO: make image to load be extracted from command line parameters
-        loader.load("shaft.bmp", img);
+        loader.load("auge.bmp", img);
 
         splitter.getIntensity(img, src);
 
@@ -37,9 +38,11 @@ namespace app {
         dst.resize(rows, columns, (int()), false, true);
 
         // TODO: configure whether to use Median or Sobel from command line parameters
+        
+        int maskX = 11;
+        int maskY = 11;
 
-        // TODO: extract the macic numbers 9 and 9 to make it more readable
-        Median(src, dst, 9, 9);
+        Median(src, dst, maskX, maskY);
 
         view.show(src);
         viewTransformed.show(dst);
@@ -52,10 +55,10 @@ namespace app {
                        int const MaskSizeX,
                        int const MaskSizeY) {
 
-        static int const maxGrayScaleValue(256);
+        static int const maxGrayScaleValue = 256;
 
-        int const PicSizeY(sPic.rows());
-        int const PicSizeX(sPic.columns());
+        int const PicSizeY = sPic.rows();
+        int const PicSizeX = sPic.columns();
 
         int x, y, mx, my;
 
@@ -69,9 +72,7 @@ namespace app {
         my = fixedMedianParam(MaskSizeY);
         // mx and my have the correct values now
 
-        // TODO: implement Median below
-
-
+        median<Naive>(sPic, dPic, Mask(mx, my));
     } // END of Median
     
     void RvP01::Sobel(lti::channel8 const &sPic,
