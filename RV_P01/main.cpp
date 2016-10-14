@@ -3,6 +3,7 @@
 #include <ltiException.h> // lti::exception
 #include "O3/except.h" // o3::nullpointer_exception, o3::precondition_violation, o3::postcondition_violation, o3::assertion_violation, o3::bad_index
 #include "RV_P01.h" // app::RvP01
+#include "utils.h"
 
 int main(int argc, char *argv[]) {
     try {
@@ -44,6 +45,7 @@ int main(int argc, char *argv[]) {
             throw;
         }
     } catch (...) {
+        app::keepWindowOpen("Exited with error, hit any key to exit");
         std::exit(EXIT_FAILURE);
     }
 

@@ -39,8 +39,8 @@ namespace app {
 
         // TODO: configure whether to use Median or Sobel from command line parameters
         
-        int maskX = 11;
-        int maskY = 11;
+        int maskX = 15; // mask x size
+        int maskY = 15; // mask y size
 
         Median(src, dst, maskX, maskY);
 
@@ -72,7 +72,7 @@ namespace app {
         my = fixedMedianParam(MaskSizeY);
         // mx and my have the correct values now
 
-        median<Naive>(sPic, dPic, Mask(mx, my));
+        median<Fast>(sPic, dPic, Mask(mx, my));
     } // END of Median
     
     void RvP01::Sobel(lti::channel8 const &sPic,
