@@ -6,6 +6,7 @@
 #include "noncopyable.h"
 #include <new>
 #include <memory>
+#include <cstddef>
 
 namespace o3 {
     namespace mem_free {
@@ -166,6 +167,10 @@ namespace o3 {
     
         element_type *get() const O3_NOEXCEPT {
             return p_;
+        }
+        
+        element_type &operator[](std::size_t pos) const {
+            return p_[pos];
         }
     
         //! gives up ownership of the pointer and returns it.

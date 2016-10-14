@@ -4,6 +4,20 @@
 #include "O3/macros.h"
 
 namespace app {
+    struct Point {
+        O3_FORCE_INLINE Point()
+            : x(0),
+              y(0) { } 
+
+
+        O3_FORCE_INLINE Point(int x_, int y_)
+            : x(x_),
+              y(y_) { }
+
+        int x;
+        int y;
+    };
+
     void keepWindowOpen(std::string const &prompt = "Hit any key to exit") O3_NOEXCEPT;
 
     template <typename Numeric>

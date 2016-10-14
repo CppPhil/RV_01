@@ -184,6 +184,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Sobel.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\utils.cpp"
 				>
 			</File>
@@ -199,6 +203,10 @@
 			</File>
 			<File
 				RelativePath=".\RV_P01.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Sobel.h"
 				>
 			</File>
 			<File
