@@ -1,0 +1,6 @@
+*.manifest
+BuildLog.htm
+*.res
+*intermediate.*
+*.dep
+*.idb
