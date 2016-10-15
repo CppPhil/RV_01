@@ -1,39 +1,55 @@
 #ifndef MEDIAN_H
 #define MEDIAN_H
-#include <ltiImage.h>
-#include "O3/macros.h"
+#include <ltiImage.h> // lti::channel8, ...
+#include "O3/macros.h" // O3_FORCE_INLINE, O3_NOEXCEPT, ...
 
 namespace app {
+    //! Mask struct for the median filter
     struct Mask {
-        O3_FORCE_INLINE Mask(int x_, int y_)
+        //! constructs a Mask from two integers
+        O3_FORCE_INLINE Mask(int x_, int y_) O3_NOEXCEPT
             : x(x_), 
               y(y_) { }
 
+        //! mask x size
         int x;
+
+        //! mask y size
         int y;
     };
 
+    //! type to represent the 'naive', slow implementation of the median filter
     struct Naive { };
+
+    //! type te represent the fast histogram based implementation of the median filter
     struct Fast { };
 
+    /*! wrapper function that delegates to the appropriate medianImpl function
+    **  based on the strategy to be used,
+    **  called by RvP01::Median 
+    **/
     template <typename Strategy>
-    O3_FORCE_INLINE void median(lti::channel8 const &srcPic,
-                                lti::channel8 &dstPic,
+    O3_FORCE_INLINE void median(O3_IN lti::channel8 const &srcPic,
+                                O3_OUT lti::channel8 &dstPic,
                                 Mask mask,
                                 Strategy strat = (Strategy())) {
 
         medianImpl(srcPic, dstPic, mask, strat); 
     }
 
-    void medianImpl(lti::channel8 const &srcPic,
-                    lti::channel8 &dstPic,
+    //! 'naive' implementation of the median filter
+    void medianImpl(O3_IN lti::channel8 const &srcPic,
+                    O3_OUT lti::channel8 &dstPic,
                     Mask mask,
                     Naive strat);
 
-    void medianImpl(lti::channel8 const &srcPic,
-                    lti::channel8 &dstPic,
+    /*! fast histogram based implementation of the median filter,
+    **  approximately two times faster than the 'naive' implementation
+    **/
+    void medianImpl(O3_IN lti::channel8 const &srcPic,
+                    O3_OUT lti::channel8 &dstPic,
                     Mask mask,
                     Fast strat);
-
 } // END of namespace app
+
 #endif // MEDIAN_H

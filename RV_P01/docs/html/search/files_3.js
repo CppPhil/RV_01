@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['final_5fact_2eh',['final_act.h',['../final__act_8h.html',1,'']]],
-  ['functional_2eh',['functional.h',['../functional_8h.html',1,'']]]
+  ['sobel_2ecpp',['Sobel.cpp',['../_sobel_8cpp.html',1,'']]],
+  ['sobel_2eh',['Sobel.h',['../_sobel_8h.html',1,'']]]
 ];

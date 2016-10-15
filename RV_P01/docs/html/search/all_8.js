@@ -1,30 +1,4 @@
 var searchData=
 [
-  ['macros_2eh',['macros.h',['../macros_8h.html',1,'']]],
-  ['make_5fsigned',['make_signed',['../structo3_1_1make__signed.html',1,'o3']]],
-  ['make_5fsigned_3c_20char_20_3e',['make_signed&lt; char &gt;',['../structo3_1_1make__signed_3_01char_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20int_20_3e',['make_signed&lt; int &gt;',['../structo3_1_1make__signed_3_01int_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20long_20_3e',['make_signed&lt; long &gt;',['../structo3_1_1make__signed_3_01long_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20long_20long_20_3e',['make_signed&lt; long long &gt;',['../structo3_1_1make__signed_3_01long_01long_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20short_20_3e',['make_signed&lt; short &gt;',['../structo3_1_1make__signed_3_01short_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20signed_20char_20_3e',['make_signed&lt; signed char &gt;',['../structo3_1_1make__signed_3_01signed_01char_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20unsigned_20_3e',['make_signed&lt; unsigned &gt;',['../structo3_1_1make__signed_3_01unsigned_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20unsigned_20char_20_3e',['make_signed&lt; unsigned char &gt;',['../structo3_1_1make__signed_3_01unsigned_01char_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20unsigned_20long_20_3e',['make_signed&lt; unsigned long &gt;',['../structo3_1_1make__signed_3_01unsigned_01long_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20unsigned_20long_20long_20_3e',['make_signed&lt; unsigned long long &gt;',['../structo3_1_1make__signed_3_01unsigned_01long_01long_01_4.html',1,'o3']]],
-  ['make_5fsigned_3c_20unsigned_20short_20_3e',['make_signed&lt; unsigned short &gt;',['../structo3_1_1make__signed_3_01unsigned_01short_01_4.html',1,'o3']]],
-  ['make_5funsigned',['make_unsigned',['../structo3_1_1make__unsigned.html',1,'o3']]],
-  ['make_5funsigned_3c_20char_20_3e',['make_unsigned&lt; char &gt;',['../structo3_1_1make__unsigned_3_01char_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20int_20_3e',['make_unsigned&lt; int &gt;',['../structo3_1_1make__unsigned_3_01int_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20long_20_3e',['make_unsigned&lt; long &gt;',['../structo3_1_1make__unsigned_3_01long_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20long_20long_20_3e',['make_unsigned&lt; long long &gt;',['../structo3_1_1make__unsigned_3_01long_01long_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20short_20_3e',['make_unsigned&lt; short &gt;',['../structo3_1_1make__unsigned_3_01short_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20signed_20char_20_3e',['make_unsigned&lt; signed char &gt;',['../structo3_1_1make__unsigned_3_01signed_01char_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20unsigned_20_3e',['make_unsigned&lt; unsigned &gt;',['../structo3_1_1make__unsigned_3_01unsigned_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20unsigned_20char_20_3e',['make_unsigned&lt; unsigned char &gt;',['../structo3_1_1make__unsigned_3_01unsigned_01char_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20unsigned_20long_20_3e',['make_unsigned&lt; unsigned long &gt;',['../structo3_1_1make__unsigned_3_01unsigned_01long_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20unsigned_20long_20long_20_3e',['make_unsigned&lt; unsigned long long &gt;',['../structo3_1_1make__unsigned_3_01unsigned_01long_01long_01_4.html',1,'o3']]],
-  ['make_5funsigned_3c_20unsigned_20short_20_3e',['make_unsigned&lt; unsigned short &gt;',['../structo3_1_1make__unsigned_3_01unsigned_01short_01_4.html',1,'o3']]],
-  ['max_5fsize',['max_size',['../classo3_1_1array.html#a0afb7be70ede96dfa669121b21afd428',1,'o3::array']]],
-  ['memory_2eh',['memory.h',['../memory_8h.html',1,'']]]
+  ['naive',['Naive',['../structapp_1_1_naive.html',1,'app']]]
 ];

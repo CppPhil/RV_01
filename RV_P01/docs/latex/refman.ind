@@ -1,0 +1,172 @@
+\begin{theindex}
+
+  \item {app}, \hyperpage{7}
+    \subitem {fixed\+Median\+Param}, \hyperpage{8}
+    \subitem {get\+Gx}, \hyperpage{8}
+    \subitem {get\+Gy}, \hyperpage{8}
+    \subitem {get\+Target\+Color}, \hyperpage{8}
+    \subitem {is\+Even}, \hyperpage{8}
+    \subitem {is\+Odd}, \hyperpage{8}
+    \subitem {keep\+Window\+Open}, \hyperpage{9}
+    \subitem {median}, \hyperpage{9}
+    \subitem {median\+Impl}, \hyperpage{9}
+    \subitem {parse\+Cl\+Params}, \hyperpage{9}
+    \subitem {resize\+Image}, \hyperpage{9}
+    \subitem {sobel\+Impl}, \hyperpage{9}
+    \subitem {square}, \hyperpage{9}
+  \item {app\+::\+Action}, \hyperpage{11}
+    \subitem {file}, \hyperpage{11}
+    \subitem {filter}, \hyperpage{11}
+    \subitem {mask\+X}, \hyperpage{11}
+    \subitem {mask\+Y}, \hyperpage{12}
+  \item {app\+::\+Cout\+Flusher}, \hyperpage{12}
+    \subitem {operator()}, \hyperpage{12}
+  \item {app\+::\+Fast}, \hyperpage{12}
+  \item {app\+::\+Filter}, \hyperpage{10}
+    \subitem {Error}, \hyperpage{10}
+    \subitem {Filter}, \hyperpage{10}
+    \subitem {Median}, \hyperpage{10}
+    \subitem {Sobel}, \hyperpage{10}
+  \item {app\+::\+Mask}, \hyperpage{13}
+    \subitem {Mask}, \hyperpage{13}
+    \subitem {x}, \hyperpage{13}
+    \subitem {y}, \hyperpage{13}
+  \item {app\+::\+Naive}, \hyperpage{14}
+  \item {app\+::\+Rv\+P01}, \hyperpage{14}
+    \subitem {Median}, \hyperpage{14}
+    \subitem {operator()}, \hyperpage{14}
+    \subitem {Sobel}, \hyperpage{15}
+
+  \indexspace
+
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Cl\+Params.\+cpp}, 
+		\hyperpage{17}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Cl\+Params.\+h}, 
+		\hyperpage{17}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Median.\+cpp}, 
+		\hyperpage{18}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Median.\+h}, 
+		\hyperpage{19}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01.\+cpp}, 
+		\hyperpage{19}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01.\+h}, 
+		\hyperpage{20}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Sobel.\+cpp}, 
+		\hyperpage{20}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Sobel.\+h}, 
+		\hyperpage{21}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/main.\+cpp}, 
+		\hyperpage{18}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.\+cpp}, 
+		\hyperpage{21}
+  \item {C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.\+h}, 
+		\hyperpage{22}
+
+  \indexspace
+
+  \item {Error}
+    \subitem {app\+::\+Filter}, \hyperpage{10}
+
+  \indexspace
+
+  \item {file}
+    \subitem {app\+::\+Action}, \hyperpage{11}
+  \item {Filter}
+    \subitem {app\+::\+Filter}, \hyperpage{10}
+  \item {filter}
+    \subitem {app\+::\+Action}, \hyperpage{11}
+  \item {fixed\+Median\+Param}
+    \subitem {app}, \hyperpage{8}
+
+  \indexspace
+
+  \item {get\+Gx}
+    \subitem {app}, \hyperpage{8}
+  \item {get\+Gy}
+    \subitem {app}, \hyperpage{8}
+  \item {get\+Target\+Color}
+    \subitem {app}, \hyperpage{8}
+
+  \indexspace
+
+  \item {is\+Even}
+    \subitem {app}, \hyperpage{8}
+  \item {is\+Odd}
+    \subitem {app}, \hyperpage{8}
+
+  \indexspace
+
+  \item {keep\+Window\+Open}
+    \subitem {app}, \hyperpage{9}
+
+  \indexspace
+
+  \item {M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}
+    \subitem {utils.\+h}, \hyperpage{22}
+  \item {M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}
+    \subitem {utils.\+h}, \hyperpage{22}
+  \item {main}
+    \subitem {main.\+cpp}, \hyperpage{18}
+  \item {main.\+cpp}
+    \subitem {main}, \hyperpage{18}
+  \item {Mask}
+    \subitem {app\+::\+Mask}, \hyperpage{13}
+  \item {mask\+X}
+    \subitem {app\+::\+Action}, \hyperpage{11}
+  \item {mask\+Y}
+    \subitem {app\+::\+Action}, \hyperpage{12}
+  \item {max}
+    \subitem {utils.\+cpp}, \hyperpage{22}
+  \item {Median}
+    \subitem {app\+::\+Filter}, \hyperpage{10}
+    \subitem {app\+::\+Rv\+P01}, \hyperpage{14}
+  \item {median}
+    \subitem {app}, \hyperpage{9}
+  \item {median\+Impl}
+    \subitem {app}, \hyperpage{9}
+
+  \indexspace
+
+  \item {operator()}
+    \subitem {app\+::\+Cout\+Flusher}, \hyperpage{12}
+    \subitem {app\+::\+Rv\+P01}, \hyperpage{14}
+
+  \indexspace
+
+  \item {parse\+Cl\+Params}
+    \subitem {app}, \hyperpage{9}
+
+  \indexspace
+
+  \item {resize\+Image}
+    \subitem {app}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Sobel}
+    \subitem {app\+::\+Filter}, \hyperpage{10}
+    \subitem {app\+::\+Rv\+P01}, \hyperpage{15}
+  \item {sobel\+Impl}
+    \subitem {app}, \hyperpage{9}
+  \item {square}
+    \subitem {app}, \hyperpage{9}
+
+  \indexspace
+
+  \item {utils.\+cpp}
+    \subitem {max}, \hyperpage{22}
+  \item {utils.\+h}
+    \subitem {M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}, \hyperpage{22}
+    \subitem {M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}, \hyperpage{22}
+
+  \indexspace
+
+  \item {x}
+    \subitem {app\+::\+Mask}, \hyperpage{13}
+
+  \indexspace
+
+  \item {y}
+    \subitem {app\+::\+Mask}, \hyperpage{13}
+
+\end{theindex}

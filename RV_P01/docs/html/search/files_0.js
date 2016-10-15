@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['algorithm_2eh',['algorithm.h',['../algorithm_8h.html',1,'']]],
-  ['assert_2eh',['assert.h',['../assert_8h.html',1,'']]]
+  ['clparams_2ecpp',['ClParams.cpp',['../_cl_params_8cpp.html',1,'']]],
+  ['clparams_2eh',['ClParams.h',['../_cl_params_8h.html',1,'']]]
 ];

@@ -1,0 +1,269 @@
+\hypertarget{namespaceapp}{}\section{app Namespace Reference}
+\label{namespaceapp}\index{app@{app}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceapp_1_1_filter}{Filter}
+\begin{DoxyCompactList}\small\item\em wrapping namespace to simulate C++11 scoped enums \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structapp_1_1_action}{Action}
+\begin{DoxyCompactList}\small\item\em struct that represents what actions are to be taken \end{DoxyCompactList}\item 
+struct \hyperlink{structapp_1_1_cout_flusher}{Cout\+Flusher}
+\begin{DoxyCompactList}\small\item\em functor that flushes cout in its call operator \end{DoxyCompactList}\item 
+struct \hyperlink{structapp_1_1_fast}{Fast}
+\begin{DoxyCompactList}\small\item\em type te represent the fast histogram based implementation of the median filter \end{DoxyCompactList}\item 
+struct \hyperlink{structapp_1_1_mask}{Mask}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structapp_1_1_mask}{Mask} struct for the median filter. \end{DoxyCompactList}\item 
+struct \hyperlink{structapp_1_1_naive}{Naive}
+\begin{DoxyCompactList}\small\item\em type to represent the \textquotesingle{}naive\textquotesingle{}, slow implementation of the median filter \end{DoxyCompactList}\item 
+class \hyperlink{classapp_1_1_rv_p01}{Rv\+P01}
+\begin{DoxyCompactList}\small\item\em class to be instantiated in the main function, calling the call operator will effectively launch the application \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structapp_1_1_action}{Action} \hyperlink{namespaceapp_aea85a2e5d29188c9ddb6ffc74fe20262}{parse\+Cl\+Params} (int argc, O3\+\_\+\+I\+N char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em parses the command line parameters given and produces an appropriate \hyperlink{structapp_1_1_action}{Action} struct \end{DoxyCompactList}\item 
+void \hyperlink{namespaceapp_ad7bc3746aa2d65b3fac91c4aac880a30}{median\+Impl} (O3\+\_\+\+I\+N lti\+::channel8 const \&src\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&dst\+Pic, \hyperlink{structapp_1_1_mask}{Mask} mask, \hyperlink{structapp_1_1_naive}{Naive} strat)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}naive\textquotesingle{} implementation of the median filter \end{DoxyCompactList}\item 
+O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int \hyperlink{namespaceapp_ae9f26815bebcd007aaa56f52289e732e}{get\+Target\+Color} (O3\+\_\+\+I\+N lti\+::channel8 const \&s\+Pic, int const point\+Y, int const point\+X, int const my, int const mx, int const med)
+\begin{DoxyCompactList}\small\item\em returns the color to write at point\+Y, point\+X; used by histogram median \end{DoxyCompactList}\item 
+void \hyperlink{namespaceapp_a966eb67a6bd4bf4cb5d7c4c1807c6e09}{median\+Impl} (O3\+\_\+\+I\+N lti\+::channel8 const \&src\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&dst\+Pic, \hyperlink{structapp_1_1_mask}{Mask} mask, \hyperlink{structapp_1_1_fast}{Fast} strat)
+\item 
+{\footnotesize template$<$typename Strategy $>$ }\\O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{namespaceapp_a8cf2a58dae2a837a4d27e2d5cf142494}{median} (O3\+\_\+\+I\+N lti\+::channel8 const \&src\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&dst\+Pic, \hyperlink{structapp_1_1_mask}{Mask} mask, Strategy strat=(Strategy()))
+\item 
+O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E double \hyperlink{namespaceapp_a2cfc34514d2409982903f1cef9d673dd}{square} (double val)
+\begin{DoxyCompactList}\small\item\em calculates the square of the value passed into the parameter and returns the result. \end{DoxyCompactList}\item 
+O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int \hyperlink{namespaceapp_aa65cd437f04ffb6410ece334adeacef4}{get\+Gx} (O3\+\_\+\+I\+N lti\+::channel8 const \&img, int y, int x)
+\item 
+O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int \hyperlink{namespaceapp_a780dfdd4b77b6f83c863669f9fbc2fec}{get\+Gy} (O3\+\_\+\+I\+N lti\+::channel8 const \&img, int y, int x)
+\item 
+void \hyperlink{namespaceapp_a83d691f6b5aa215aec1e046745fcf141}{sobel\+Impl} (O3\+\_\+\+I\+N lti\+::channel8 const \&s\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&gradient\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&direction\+Pic)
+\begin{DoxyCompactList}\small\item\em implementation function of the sobel filter, called by \hyperlink{classapp_1_1_rv_p01_a017983f1152c3d3338dc50d9819fce10}{Rv\+P01\+::\+Sobel} \end{DoxyCompactList}\item 
+void \hyperlink{namespaceapp_a457f99c3391ca2796b11bb05d2a34897}{keep\+Window\+Open} (O3\+\_\+\+I\+N std\+::string const \&prompt=\char`\"{}Hit enter to exit\char`\"{}) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T
+\begin{DoxyCompactList}\small\item\em keeps the console window open, waiting for the user to hit enter, displaying the prompt passed into the parameter \end{DoxyCompactList}\item 
+void \hyperlink{namespaceapp_a0eed5d7b14eec7490490414c575de703}{resize\+Image} (O3\+\_\+\+O\+U\+T lti\+::channel8 \&to\+Resize, int rows, int columns)
+\begin{DoxyCompactList}\small\item\em resizes the image passed into to\+Risize to have rows rows and columns columns \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Numeric $>$ }\\O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{namespaceapp_a7c90ad3df62128bcc74b0b618c95dea3}{is\+Odd} (Numeric numeric) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T
+\begin{DoxyCompactList}\small\item\em returns true if the value passed into the parameter is odd; false otherwise \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Numeric $>$ }\\O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{namespaceapp_a509810ef9066b28a55c105cfe44364b3}{is\+Even} (Numeric numeric) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T
+\begin{DoxyCompactList}\small\item\em return true if the value passed into the parameter is even; false otherwise \end{DoxyCompactList}\item 
+O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int \hyperlink{namespaceapp_a2dc281df1eb8f42d87f03f78d7c2892a}{fixed\+Median\+Param} (int param) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceapp_a2dc281df1eb8f42d87f03f78d7c2892a}{}\index{app@{app}!fixed\+Median\+Param@{fixed\+Median\+Param}}
+\index{fixed\+Median\+Param@{fixed\+Median\+Param}!app@{app}}
+\subsubsection[{fixed\+Median\+Param(int param) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int app\+::fixed\+Median\+Param (
+\begin{DoxyParamCaption}
+\item[{int}]{param}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a2dc281df1eb8f42d87f03f78d7c2892a}
+fixes a median mask parameter, by returning the value one larger than the value passed into the parameter if it is even; otherwise returns the value passed into the parameter. 
+
+Definition at line 37 of file utils.\+h.
+
+\hypertarget{namespaceapp_aa65cd437f04ffb6410ece334adeacef4}{}\index{app@{app}!get\+Gx@{get\+Gx}}
+\index{get\+Gx@{get\+Gx}!app@{app}}
+\subsubsection[{get\+Gx(\+O3\+\_\+\+I\+N lti\+::channel8 const \&img, int y, int x)}]{\setlength{\rightskip}{0pt plus 5cm}O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int app\+::get\+Gx (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{img, }
+\item[{int}]{y, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_aa65cd437f04ffb6410ece334adeacef4}
+returns Gx for the pixel at position y, x in the image img uses the following filter mask\+: $\vert$-\/-\/-\/-\/-\/---$\vert$ $\vert$-\/1 0 1$\vert$ $\vert$-\/2 0 2$\vert$ $\vert$-\/1 0 1$\vert$ $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$ 
+
+Definition at line 21 of file Sobel.\+cpp.
+
+\hypertarget{namespaceapp_a780dfdd4b77b6f83c863669f9fbc2fec}{}\index{app@{app}!get\+Gy@{get\+Gy}}
+\index{get\+Gy@{get\+Gy}!app@{app}}
+\subsubsection[{get\+Gy(\+O3\+\_\+\+I\+N lti\+::channel8 const \&img, int y, int x)}]{\setlength{\rightskip}{0pt plus 5cm}O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int app\+::get\+Gy (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{img, }
+\item[{int}]{y, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a780dfdd4b77b6f83c863669f9fbc2fec}
+return Gy for the pixel at position y, x in the image img uses the following filter mask\+: $\vert$-\/-\/-\/-\/-\/---$\vert$ $\vert$-\/1 -\/2 -\/1$\vert$ $\vert$ 0 0 0$\vert$ $\vert$ 1 2 1$\vert$ $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$ 
+
+Definition at line 38 of file Sobel.\+cpp.
+
+\hypertarget{namespaceapp_ae9f26815bebcd007aaa56f52289e732e}{}\index{app@{app}!get\+Target\+Color@{get\+Target\+Color}}
+\index{get\+Target\+Color@{get\+Target\+Color}!app@{app}}
+\subsubsection[{get\+Target\+Color(\+O3\+\_\+\+I\+N lti\+::channel8 const \&s\+Pic, int const point\+Y, int const point\+X, int const my, int const mx, int const med)}]{\setlength{\rightskip}{0pt plus 5cm}O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int app\+::get\+Target\+Color (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{s\+Pic, }
+\item[{int const}]{point\+Y, }
+\item[{int const}]{point\+X, }
+\item[{int const}]{my, }
+\item[{int const}]{mx, }
+\item[{int const}]{med}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_ae9f26815bebcd007aaa56f52289e732e}
+
+
+returns the color to write at point\+Y, point\+X; used by histogram median 
+
+
+
+Definition at line 64 of file Median.\+cpp.
+
+\hypertarget{namespaceapp_a509810ef9066b28a55c105cfe44364b3}{}\index{app@{app}!is\+Even@{is\+Even}}
+\index{is\+Even@{is\+Even}!app@{app}}
+\subsubsection[{is\+Even(\+Numeric numeric) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Numeric $>$ O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool app\+::is\+Even (
+\begin{DoxyParamCaption}
+\item[{Numeric}]{numeric}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a509810ef9066b28a55c105cfe44364b3}
+
+
+return true if the value passed into the parameter is even; false otherwise 
+
+
+
+Definition at line 28 of file utils.\+h.
+
+\hypertarget{namespaceapp_a7c90ad3df62128bcc74b0b618c95dea3}{}\index{app@{app}!is\+Odd@{is\+Odd}}
+\index{is\+Odd@{is\+Odd}!app@{app}}
+\subsubsection[{is\+Odd(\+Numeric numeric) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Numeric $>$ O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool app\+::is\+Odd (
+\begin{DoxyParamCaption}
+\item[{Numeric}]{numeric}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a7c90ad3df62128bcc74b0b618c95dea3}
+
+
+returns true if the value passed into the parameter is odd; false otherwise 
+
+
+
+Definition at line 20 of file utils.\+h.
+
+\hypertarget{namespaceapp_a457f99c3391ca2796b11bb05d2a34897}{}\index{app@{app}!keep\+Window\+Open@{keep\+Window\+Open}}
+\index{keep\+Window\+Open@{keep\+Window\+Open}!app@{app}}
+\subsubsection[{keep\+Window\+Open(\+O3\+\_\+\+I\+N std\+::string const \&prompt=""Hit enter to exit"") O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}void app\+::keep\+Window\+Open (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N std\+::string const \&}]{prompt}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a457f99c3391ca2796b11bb05d2a34897}
+
+
+keeps the console window open, waiting for the user to hit enter, displaying the prompt passed into the parameter 
+
+
+
+Definition at line 10 of file utils.\+cpp.
+
+\hypertarget{namespaceapp_a8cf2a58dae2a837a4d27e2d5cf142494}{}\index{app@{app}!median@{median}}
+\index{median@{median}!app@{app}}
+\subsubsection[{median(\+O3\+\_\+\+I\+N lti\+::channel8 const \&src\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&dst\+Pic, Mask mask, Strategy strat=(\+Strategy()))}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Strategy $>$ O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void app\+::median (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{src\+Pic, }
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{dst\+Pic, }
+\item[{{\bf Mask}}]{mask, }
+\item[{Strategy}]{strat = {\ttfamily (Strategy())}}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a8cf2a58dae2a837a4d27e2d5cf142494}
+wrapper function that delegates to the appropriate median\+Impl function based on the strategy to be used, called by \hyperlink{classapp_1_1_rv_p01_ab76c5414248933e77a07dc19091779d0}{Rv\+P01\+::\+Median} 
+
+Definition at line 32 of file Median.\+h.
+
+\hypertarget{namespaceapp_ad7bc3746aa2d65b3fac91c4aac880a30}{}\index{app@{app}!median\+Impl@{median\+Impl}}
+\index{median\+Impl@{median\+Impl}!app@{app}}
+\subsubsection[{median\+Impl(\+O3\+\_\+\+I\+N lti\+::channel8 const \&src\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&dst\+Pic, Mask mask, Naive strat)}]{\setlength{\rightskip}{0pt plus 5cm}void app\+::median\+Impl (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{src\+Pic, }
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{dst\+Pic, }
+\item[{{\bf Mask}}]{mask, }
+\item[{{\bf Naive}}]{strat}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_ad7bc3746aa2d65b3fac91c4aac880a30}
+
+
+\textquotesingle{}naive\textquotesingle{} implementation of the median filter 
+
+
+
+Definition at line 9 of file Median.\+cpp.
+
+\hypertarget{namespaceapp_a966eb67a6bd4bf4cb5d7c4c1807c6e09}{}\index{app@{app}!median\+Impl@{median\+Impl}}
+\index{median\+Impl@{median\+Impl}!app@{app}}
+\subsubsection[{median\+Impl(\+O3\+\_\+\+I\+N lti\+::channel8 const \&src\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&dst\+Pic, Mask mask, Fast strat)}]{\setlength{\rightskip}{0pt plus 5cm}void app\+::median\+Impl (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{src\+Pic, }
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{dst\+Pic, }
+\item[{{\bf Mask}}]{mask, }
+\item[{{\bf Fast}}]{strat}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a966eb67a6bd4bf4cb5d7c4c1807c6e09}
+fast histogram based implementation of the median filter, approximately two times faster than the \textquotesingle{}naive\textquotesingle{} implementation 
+
+Definition at line 90 of file Median.\+cpp.
+
+\hypertarget{namespaceapp_aea85a2e5d29188c9ddb6ffc74fe20262}{}\index{app@{app}!parse\+Cl\+Params@{parse\+Cl\+Params}}
+\index{parse\+Cl\+Params@{parse\+Cl\+Params}!app@{app}}
+\subsubsection[{parse\+Cl\+Params(int argc, O3\+\_\+\+I\+N char $\ast$$\ast$argv)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action} app\+::parse\+Cl\+Params (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{O3\+\_\+\+I\+N char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_aea85a2e5d29188c9ddb6ffc74fe20262}
+
+
+parses the command line parameters given and produces an appropriate \hyperlink{structapp_1_1_action}{Action} struct 
+
+stringstream that starts of with the string in argv\mbox{[}mask\+X\+Offset\mbox{]} 
+
+Definition at line 7 of file Cl\+Params.\+cpp.
+
+\hypertarget{namespaceapp_a0eed5d7b14eec7490490414c575de703}{}\index{app@{app}!resize\+Image@{resize\+Image}}
+\index{resize\+Image@{resize\+Image}!app@{app}}
+\subsubsection[{resize\+Image(\+O3\+\_\+\+O\+U\+T lti\+::channel8 \&to\+Resize, int rows, int columns)}]{\setlength{\rightskip}{0pt plus 5cm}void app\+::resize\+Image (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{to\+Resize, }
+\item[{int}]{rows, }
+\item[{int}]{columns}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a0eed5d7b14eec7490490414c575de703}
+
+
+resizes the image passed into to\+Risize to have rows rows and columns columns 
+
+
+
+Definition at line 22 of file utils.\+cpp.
+
+\hypertarget{namespaceapp_a83d691f6b5aa215aec1e046745fcf141}{}\index{app@{app}!sobel\+Impl@{sobel\+Impl}}
+\index{sobel\+Impl@{sobel\+Impl}!app@{app}}
+\subsubsection[{sobel\+Impl(\+O3\+\_\+\+I\+N lti\+::channel8 const \&s\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&gradient\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&direction\+Pic)}]{\setlength{\rightskip}{0pt plus 5cm}void app\+::sobel\+Impl (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{s\+Pic, }
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{gradient\+Pic, }
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{direction\+Pic}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a83d691f6b5aa215aec1e046745fcf141}
+
+
+implementation function of the sobel filter, called by \hyperlink{classapp_1_1_rv_p01_a017983f1152c3d3338dc50d9819fce10}{Rv\+P01\+::\+Sobel} 
+
+
+
+Definition at line 47 of file Sobel.\+cpp.
+
+\hypertarget{namespaceapp_a2cfc34514d2409982903f1cef9d673dd}{}\index{app@{app}!square@{square}}
+\index{square@{square}!app@{app}}
+\subsubsection[{square(double val)}]{\setlength{\rightskip}{0pt plus 5cm}O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E double app\+::square (
+\begin{DoxyParamCaption}
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)}\label{namespaceapp_a2cfc34514d2409982903f1cef9d673dd}
+
+
+calculates the square of the value passed into the parameter and returns the result. 
+
+
+
+Definition at line 9 of file Sobel.\+cpp.
+

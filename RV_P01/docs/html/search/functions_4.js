@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['empty',['empty',['../classo3_1_1array.html#a5ffab361eb1e26cc4e3aa0f221a0dfcc',1,'o3::array']]],
-  ['end',['end',['../classo3_1_1array.html#afcc8409eb1ee8e97791d01ef8f447c68',1,'o3::array::end()'],['../classo3_1_1array.html#aa8da91145870ed3d076bd18ed424a04d',1,'o3::array::end() const '],['../namespaceo3.html#a44ab799c5993543a1f2931ef9e9ba748',1,'o3::end(Cont &amp;cont)'],['../namespaceo3.html#a1ded42e9b0c675e292c0aafe38c2acee',1,'o3::end(Cont const &amp;cont)'],['../namespaceo3.html#af977d3b7a5542ffe827c21bc7adf01e9',1,'o3::end(Ty(&amp;arr)[Num]) O3_NOEXCEPT'],['../namespaceo3.html#a7646f9231e1a67e1fd973b389191e699',1,'o3::end(Ty const (&amp;arr)[Num]) O3_NOEXCEPT']]]
+  ['main',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['mask',['Mask',['../structapp_1_1_mask.html#afd532104fed396f1fa618b29eefb38b5',1,'app::Mask']]],
+  ['median',['Median',['../classapp_1_1_rv_p01.html#ab76c5414248933e77a07dc19091779d0',1,'app::RvP01::Median()'],['../namespaceapp.html#a8cf2a58dae2a837a4d27e2d5cf142494',1,'app::median()']]],
+  ['medianimpl',['medianImpl',['../namespaceapp.html#ad7bc3746aa2d65b3fac91c4aac880a30',1,'app::medianImpl(O3_IN lti::channel8 const &amp;srcPic, O3_OUT lti::channel8 &amp;dstPic, Mask mask, Naive strat)'],['../namespaceapp.html#a966eb67a6bd4bf4cb5d7c4c1807c6e09',1,'app::medianImpl(O3_IN lti::channel8 const &amp;srcPic, O3_OUT lti::channel8 &amp;dstPic, Mask mask, Fast strat)']]]
 ];

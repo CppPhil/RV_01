@@ -1,0 +1,79 @@
+\hypertarget{classapp_1_1_rv_p01}{}\section{app\+:\+:Rv\+P01 Class Reference}
+\label{classapp_1_1_rv_p01}\index{app\+::\+Rv\+P01@{app\+::\+Rv\+P01}}
+
+
+class to be instantiated in the main function, calling the call operator will effectively launch the application  
+
+
+
+
+{\ttfamily \#include $<$R\+V\+\_\+\+P01.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classapp_1_1_rv_p01_ab74e916d94b19b28b8ed0026bb43447e}{operator()} (int argc, O3\+\_\+\+I\+N char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em the call operator, to be called in the main function, delegate the argc and argv parameters to this member function \end{DoxyCompactList}\item 
+void \hyperlink{classapp_1_1_rv_p01_ab76c5414248933e77a07dc19091779d0}{Median} (O3\+\_\+\+I\+N lti\+::channel8 const \&s\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&d\+Pic, int const Mask\+Size\+X, int const Mask\+Size\+Y)
+\item 
+void \hyperlink{classapp_1_1_rv_p01_a017983f1152c3d3338dc50d9819fce10}{Sobel} (O3\+\_\+\+I\+N lti\+::channel8 const \&s\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&Gradient\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&Direction\+Pic)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class to be instantiated in the main function, calling the call operator will effectively launch the application 
+
+Definition at line 8 of file R\+V\+\_\+\+P01.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classapp_1_1_rv_p01_ab76c5414248933e77a07dc19091779d0}{}\index{app\+::\+Rv\+P01@{app\+::\+Rv\+P01}!Median@{Median}}
+\index{Median@{Median}!app\+::\+Rv\+P01@{app\+::\+Rv\+P01}}
+\subsubsection[{Median(\+O3\+\_\+\+I\+N lti\+::channel8 const \&s\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&d\+Pic, int const Mask\+Size\+X, int const Mask\+Size\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void app\+::\+Rv\+P01\+::\+Median (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{s\+Pic, }
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{d\+Pic, }
+\item[{int const}]{Mask\+Size\+X, }
+\item[{int const}]{Mask\+Size\+Y}
+\end{DoxyParamCaption}
+)}\label{classapp_1_1_rv_p01_ab76c5414248933e77a07dc19091779d0}
+applies median filter to the s\+Pic passed using the median mask size of Mask\+Size\+X and Mask\+Size\+Y, writes the result to d\+Pic 
+
+Definition at line 82 of file R\+V\+\_\+\+P01.\+cpp.
+
+\hypertarget{classapp_1_1_rv_p01_ab74e916d94b19b28b8ed0026bb43447e}{}\index{app\+::\+Rv\+P01@{app\+::\+Rv\+P01}!operator()@{operator()}}
+\index{operator()@{operator()}!app\+::\+Rv\+P01@{app\+::\+Rv\+P01}}
+\subsubsection[{operator()(int argc, O3\+\_\+\+I\+N char $\ast$$\ast$argv)}]{\setlength{\rightskip}{0pt plus 5cm}void app\+::\+Rv\+P01\+::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{O3\+\_\+\+I\+N char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{classapp_1_1_rv_p01_ab74e916d94b19b28b8ed0026bb43447e}
+
+
+the call operator, to be called in the main function, delegate the argc and argv parameters to this member function 
+
+
+
+Definition at line 14 of file R\+V\+\_\+\+P01.\+cpp.
+
+\hypertarget{classapp_1_1_rv_p01_a017983f1152c3d3338dc50d9819fce10}{}\index{app\+::\+Rv\+P01@{app\+::\+Rv\+P01}!Sobel@{Sobel}}
+\index{Sobel@{Sobel}!app\+::\+Rv\+P01@{app\+::\+Rv\+P01}}
+\subsubsection[{Sobel(\+O3\+\_\+\+I\+N lti\+::channel8 const \&s\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&\+Gradient\+Pic, O3\+\_\+\+O\+U\+T lti\+::channel8 \&\+Direction\+Pic)}]{\setlength{\rightskip}{0pt plus 5cm}void app\+::\+Rv\+P01\+::\+Sobel (
+\begin{DoxyParamCaption}
+\item[{O3\+\_\+\+I\+N lti\+::channel8 const \&}]{s\+Pic, }
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{Gradient\+Pic, }
+\item[{O3\+\_\+\+O\+U\+T lti\+::channel8 \&}]{Direction\+Pic}
+\end{DoxyParamCaption}
+)}\label{classapp_1_1_rv_p01_a017983f1152c3d3338dc50d9819fce10}
+applies sobel filter to s\+Pic passed, outputs the gradient picture to Gradient\+Pic and the direction picture to Direction\+Pic 
+
+Definition at line 96 of file R\+V\+\_\+\+P01.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\hyperlink{_r_v___p01_8h}{R\+V\+\_\+\+P01.\+h}\item 
+C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\hyperlink{_r_v___p01_8cpp}{R\+V\+\_\+\+P01.\+cpp}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ubyte',['ubyte',['../common_8h.html#a5dd4f281954ce1405c92d62a427f839a',1,'common.h']]]
+  ['y',['y',['../structapp_1_1_mask.html#a10a25ffb3bb2d61e12520e881a3d0b0d',1,'app::Mask']]]
 ];

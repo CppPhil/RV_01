@@ -1,0 +1,61 @@
+\hypertarget{utils_8h}{}\section{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.h File Reference}
+\label{utils_8h}\index{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.\+h@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.\+h}}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$cstddef$>$}\\*
+{\ttfamily \#include $<$lti\+Image.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}O3/macros.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structapp_1_1_cout_flusher}{app\+::\+Cout\+Flusher}
+\begin{DoxyCompactList}\small\item\em functor that flushes cout in its call operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceapp}{app}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{utils_8h_a632d4f1cda6e620368b5bd3290a5d142}{M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}~0
+\begin{DoxyCompactList}\small\item\em minimun possible grayscale value\+: 0 \end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_afbebd102642afe78918e544f9552a6b9}{M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}~255
+\begin{DoxyCompactList}\small\item\em maximum possible grayscale value\+: 255 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceapp_a457f99c3391ca2796b11bb05d2a34897}{app\+::keep\+Window\+Open} (O3\+\_\+\+I\+N std\+::string const \&prompt=\char`\"{}Hit enter to exit\char`\"{}) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T
+\begin{DoxyCompactList}\small\item\em keeps the console window open, waiting for the user to hit enter, displaying the prompt passed into the parameter \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Numeric $>$ }\\O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{namespaceapp_a7c90ad3df62128bcc74b0b618c95dea3}{app\+::is\+Odd} (Numeric numeric) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T
+\begin{DoxyCompactList}\small\item\em returns true if the value passed into the parameter is odd; false otherwise \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Numeric $>$ }\\O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{namespaceapp_a509810ef9066b28a55c105cfe44364b3}{app\+::is\+Even} (Numeric numeric) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T
+\begin{DoxyCompactList}\small\item\em return true if the value passed into the parameter is even; false otherwise \end{DoxyCompactList}\item 
+O3\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int \hyperlink{namespaceapp_a2dc281df1eb8f42d87f03f78d7c2892a}{app\+::fixed\+Median\+Param} (int param) O3\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T
+\item 
+void \hyperlink{namespaceapp_a0eed5d7b14eec7490490414c575de703}{app\+::resize\+Image} (O3\+\_\+\+O\+U\+T lti\+::channel8 \&to\+Resize, int rows, int columns)
+\begin{DoxyCompactList}\small\item\em resizes the image passed into to\+Risize to have rows rows and columns columns \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{utils_8h_afbebd102642afe78918e544f9552a6b9}{}\index{utils.\+h@{utils.\+h}!M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E@{M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}}
+\index{M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E@{M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}!utils.\+h@{utils.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E~255}\label{utils_8h_afbebd102642afe78918e544f9552a6b9}
+
+
+maximum possible grayscale value\+: 255 
+
+
+
+Definition at line 12 of file utils.\+h.
+
+\hypertarget{utils_8h_a632d4f1cda6e620368b5bd3290a5d142}{}\index{utils.\+h@{utils.\+h}!M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E@{M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}}
+\index{M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E@{M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}!utils.\+h@{utils.\+h}}
+\subsubsection[{M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E~0}\label{utils_8h_a632d4f1cda6e620368b5bd3290a5d142}
+
+
+minimun possible grayscale value\+: 0 
+
+
+
+Definition at line 9 of file utils.\+h.
+

@@ -1,0 +1,85 @@
+\indexentry{app@{app}|hyperpage}{7}
+\indexentry{app@{app}!fixed\+Median\+Param@{fixed\+Median\+Param}|hyperpage}{8}
+\indexentry{fixed\+Median\+Param@{fixed\+Median\+Param}!app@{app}|hyperpage}{8}
+\indexentry{app@{app}!get\+Gx@{get\+Gx}|hyperpage}{8}
+\indexentry{get\+Gx@{get\+Gx}!app@{app}|hyperpage}{8}
+\indexentry{app@{app}!get\+Gy@{get\+Gy}|hyperpage}{8}
+\indexentry{get\+Gy@{get\+Gy}!app@{app}|hyperpage}{8}
+\indexentry{app@{app}!get\+Target\+Color@{get\+Target\+Color}|hyperpage}{8}
+\indexentry{get\+Target\+Color@{get\+Target\+Color}!app@{app}|hyperpage}{8}
+\indexentry{app@{app}!is\+Even@{is\+Even}|hyperpage}{8}
+\indexentry{is\+Even@{is\+Even}!app@{app}|hyperpage}{8}
+\indexentry{app@{app}!is\+Odd@{is\+Odd}|hyperpage}{8}
+\indexentry{is\+Odd@{is\+Odd}!app@{app}|hyperpage}{8}
+\indexentry{app@{app}!keep\+Window\+Open@{keep\+Window\+Open}|hyperpage}{9}
+\indexentry{keep\+Window\+Open@{keep\+Window\+Open}!app@{app}|hyperpage}{9}
+\indexentry{app@{app}!median@{median}|hyperpage}{9}
+\indexentry{median@{median}!app@{app}|hyperpage}{9}
+\indexentry{app@{app}!median\+Impl@{median\+Impl}|hyperpage}{9}
+\indexentry{median\+Impl@{median\+Impl}!app@{app}|hyperpage}{9}
+\indexentry{app@{app}!median\+Impl@{median\+Impl}|hyperpage}{9}
+\indexentry{median\+Impl@{median\+Impl}!app@{app}|hyperpage}{9}
+\indexentry{app@{app}!parse\+Cl\+Params@{parse\+Cl\+Params}|hyperpage}{9}
+\indexentry{parse\+Cl\+Params@{parse\+Cl\+Params}!app@{app}|hyperpage}{9}
+\indexentry{app@{app}!resize\+Image@{resize\+Image}|hyperpage}{9}
+\indexentry{resize\+Image@{resize\+Image}!app@{app}|hyperpage}{9}
+\indexentry{app@{app}!sobel\+Impl@{sobel\+Impl}|hyperpage}{9}
+\indexentry{sobel\+Impl@{sobel\+Impl}!app@{app}|hyperpage}{9}
+\indexentry{app@{app}!square@{square}|hyperpage}{9}
+\indexentry{square@{square}!app@{app}|hyperpage}{9}
+\indexentry{app\+::\+Filter@{app\+::\+Filter}|hyperpage}{10}
+\indexentry{app\+::\+Filter@{app\+::\+Filter}!Filter@{Filter}|hyperpage}{10}
+\indexentry{Filter@{Filter}!app\+::\+Filter@{app\+::\+Filter}|hyperpage}{10}
+\indexentry{Median@{Median}!app\+::\+Filter@{app\+::\+Filter}|hyperpage}{10}
+\indexentry{app\+::\+Filter@{app\+::\+Filter}!Median@{Median}|hyperpage}{10}
+\indexentry{Sobel@{Sobel}!app\+::\+Filter@{app\+::\+Filter}|hyperpage}{10}
+\indexentry{app\+::\+Filter@{app\+::\+Filter}!Sobel@{Sobel}|hyperpage}{10}
+\indexentry{Error@{Error}!app\+::\+Filter@{app\+::\+Filter}|hyperpage}{10}
+\indexentry{app\+::\+Filter@{app\+::\+Filter}!Error@{Error}|hyperpage}{10}
+\indexentry{app\+::\+Action@{app\+::\+Action}|hyperpage}{11}
+\indexentry{app\+::\+Action@{app\+::\+Action}!file@{file}|hyperpage}{11}
+\indexentry{file@{file}!app\+::\+Action@{app\+::\+Action}|hyperpage}{11}
+\indexentry{app\+::\+Action@{app\+::\+Action}!filter@{filter}|hyperpage}{11}
+\indexentry{filter@{filter}!app\+::\+Action@{app\+::\+Action}|hyperpage}{11}
+\indexentry{app\+::\+Action@{app\+::\+Action}!mask\+X@{mask\+X}|hyperpage}{11}
+\indexentry{mask\+X@{mask\+X}!app\+::\+Action@{app\+::\+Action}|hyperpage}{11}
+\indexentry{app\+::\+Action@{app\+::\+Action}!mask\+Y@{mask\+Y}|hyperpage}{12}
+\indexentry{mask\+Y@{mask\+Y}!app\+::\+Action@{app\+::\+Action}|hyperpage}{12}
+\indexentry{app\+::\+Cout\+Flusher@{app\+::\+Cout\+Flusher}|hyperpage}{12}
+\indexentry{app\+::\+Cout\+Flusher@{app\+::\+Cout\+Flusher}!operator()@{operator()}|hyperpage}{12}
+\indexentry{operator()@{operator()}!app\+::\+Cout\+Flusher@{app\+::\+Cout\+Flusher}|hyperpage}{12}
+\indexentry{app\+::\+Fast@{app\+::\+Fast}|hyperpage}{12}
+\indexentry{app\+::\+Mask@{app\+::\+Mask}|hyperpage}{13}
+\indexentry{app\+::\+Mask@{app\+::\+Mask}!Mask@{Mask}|hyperpage}{13}
+\indexentry{Mask@{Mask}!app\+::\+Mask@{app\+::\+Mask}|hyperpage}{13}
+\indexentry{app\+::\+Mask@{app\+::\+Mask}!x@{x}|hyperpage}{13}
+\indexentry{x@{x}!app\+::\+Mask@{app\+::\+Mask}|hyperpage}{13}
+\indexentry{app\+::\+Mask@{app\+::\+Mask}!y@{y}|hyperpage}{13}
+\indexentry{y@{y}!app\+::\+Mask@{app\+::\+Mask}|hyperpage}{13}
+\indexentry{app\+::\+Naive@{app\+::\+Naive}|hyperpage}{14}
+\indexentry{app\+::\+Rv\+P01@{app\+::\+Rv\+P01}|hyperpage}{14}
+\indexentry{app\+::\+Rv\+P01@{app\+::\+Rv\+P01}!Median@{Median}|hyperpage}{14}
+\indexentry{Median@{Median}!app\+::\+Rv\+P01@{app\+::\+Rv\+P01}|hyperpage}{14}
+\indexentry{app\+::\+Rv\+P01@{app\+::\+Rv\+P01}!operator()@{operator()}|hyperpage}{14}
+\indexentry{operator()@{operator()}!app\+::\+Rv\+P01@{app\+::\+Rv\+P01}|hyperpage}{14}
+\indexentry{app\+::\+Rv\+P01@{app\+::\+Rv\+P01}!Sobel@{Sobel}|hyperpage}{15}
+\indexentry{Sobel@{Sobel}!app\+::\+Rv\+P01@{app\+::\+Rv\+P01}|hyperpage}{15}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Cl\+Params.\+cpp@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Cl\+Params.\+cpp}|hyperpage}{17}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Cl\+Params.\+h@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Cl\+Params.\+h}|hyperpage}{17}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/main.\+cpp@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/main.\+cpp}|hyperpage}{18}
+\indexentry{main.\+cpp@{main.\+cpp}!main@{main}|hyperpage}{18}
+\indexentry{main@{main}!main.\+cpp@{main.\+cpp}|hyperpage}{18}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Median.\+cpp@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Median.\+cpp}|hyperpage}{18}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Median.\+h@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Median.\+h}|hyperpage}{19}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01.\+cpp@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01.\+cpp}|hyperpage}{19}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01.\+h@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01.\+h}|hyperpage}{20}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Sobel.\+cpp@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Sobel.\+cpp}|hyperpage}{20}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Sobel.\+h@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/\+Sobel.\+h}|hyperpage}{21}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.\+cpp@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.\+cpp}|hyperpage}{21}
+\indexentry{utils.\+cpp@{utils.\+cpp}!max@{max}|hyperpage}{22}
+\indexentry{max@{max}!utils.\+cpp@{utils.\+cpp}|hyperpage}{22}
+\indexentry{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.\+h@{C\+:/\+Users/\+Jefe/\+Documents/\+Visual Studio 2008/\+Projects/\+R\+V\+\_\+\+P01/\+R\+V\+\_\+\+P01/utils.\+h}|hyperpage}{22}
+\indexentry{utils.\+h@{utils.\+h}!M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E@{M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}|hyperpage}{22}
+\indexentry{M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E@{M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}!utils.\+h@{utils.\+h}|hyperpage}{22}
+\indexentry{utils.\+h@{utils.\+h}!M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E@{M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}|hyperpage}{22}
+\indexentry{M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E@{M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E}!utils.\+h@{utils.\+h}|hyperpage}{22}

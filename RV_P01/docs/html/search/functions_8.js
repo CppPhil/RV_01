@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['max_5fsize',['max_size',['../classo3_1_1array.html#a0afb7be70ede96dfa669121b21afd428',1,'o3::array']]]
+  ['sobel',['Sobel',['../classapp_1_1_rv_p01.html#a017983f1152c3d3338dc50d9819fce10',1,'app::RvP01']]],
+  ['sobelimpl',['sobelImpl',['../namespaceapp.html#a83d691f6b5aa215aec1e046745fcf141',1,'app']]],
+  ['square',['square',['../namespaceapp.html#a2cfc34514d2409982903f1cef9d673dd',1,'app']]]
 ];

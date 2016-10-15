@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ref_5f',['ref_',['../structo3_1_1auto__ptr__ref.html#a3677eebf4cc5479dc46f85c060f217df',1,'o3::auto_ptr_ref']]]
+  ['x',['x',['../structapp_1_1_mask.html#a3e6987c38212305a1095905494b9b3cd',1,'app::Mask']]]
 ];
