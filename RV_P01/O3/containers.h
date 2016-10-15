@@ -49,15 +49,15 @@ namespace o3 {
         }
         
         iterator end() {
-            return elems;
+            return elems + Num;
         }
         
         const_iterator end() const {
-            return elems;
+            return elems + Num;
         }
         
         const_iterator cend() const {
-            return elems;
+            return elems + Num;
         }
         
         reverse_iterator rbegin() {

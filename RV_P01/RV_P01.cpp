@@ -3,6 +3,7 @@
 #include <algorithm> // std::inner_product
 #include <cstring> // std::memset
 #include <new> // new
+#include <cmath> // std::abs
 // TODO: remove unnecessary includes below this line
 #include <ltiViewer.h>
 #include <ltiTimer.h>
@@ -40,7 +41,7 @@ namespace app {
         lti::splitImageToHSI splitter;
 
         // TODO: make image to load be extracted from command line parameters
-        loader.load("auge.bmp", img);
+        loader.load("lena.bmp", img);
 
         splitter.getIntensity(img, src);
 
@@ -108,7 +109,7 @@ namespace app {
     void RvP01::Sobel(lti::channel8 const &sPic,
                       lti::channel8 &GradientPic,
                       lti::channel8 &DirectionPic) {
-        
+#if 0
         typedef o3::array<int, SobelMaskX * SobelMaskY> Array;
         typedef Array::const_iterator const_iterator;
         typedef Array::iterator iterator;
@@ -162,6 +163,8 @@ namespace app {
                 for (int i = x - xBegin; i <= x + xBegin; ++i) { // gather the elements
                     for (int j = y - yBegin; j <= y + yBegin; ++j) {
                         *it = sPic[y][x];
+                        file << "*it: " << *it << '\n';
+                        ++it;
                     }
                 }
 
@@ -171,7 +174,7 @@ namespace app {
                 
                 const_iterator xIt = xMaskBegin;
                 const_iterator yIt = yMaskBegin;
-                for (iterator iter = itBegin, end = itEnd; iter != itEnd; ++iter, ++xIt, ++yIt) {
+                for (iterator iter = itBegin, end = itEnd; iter != end; ++iter, ++xIt, ++yIt) {
                     file << "IM HERE BITCH\n";
                     file << "*iter: " << *iter
                         << '\n'
@@ -220,5 +223,31 @@ namespace app {
             }
         }
         file << std::flush;
+#endif // 0
+
+        int const rows = sPic.rows();
+        int const columns = sPic.columns();
+
+        GradientPic.resize(rows, columns, (int()), false, true);
+        DirectionPic.resize(rows, columns, (int()), false, true);
+
+        int gx = 0;
+        int gy = 0;
+        int sum = 0;
+        int alpha = 0;
+
+        for (int y = 1; y < sPic.rows() - 1; ++y) {
+            for (int x = 1; x < sPic.columns() - 1; ++x) {
+                gx = riparoo::xGradient(sPic, x, y);
+                gy = riparoo::yGradient(sPic, x, y);
+                sum = std::abs(gx) + std::abs(gy);
+                sum = o3::clamp(sum, 0, 255);
+                GradientPic[y][x] = sum;
+                alpha = std::atan2(static_cast<double>(gy),
+                                   static_cast<double>(gy));
+                DirectionPic[y][x] = alpha;
+            }
+        }
+
     } // END of Sobel
 } // END of namespace app
