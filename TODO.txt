@@ -1,3 +1,0 @@
-implement sobel
-implement timer to test time taken
-add documentation
