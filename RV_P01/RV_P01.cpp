@@ -41,7 +41,7 @@ namespace app {
         lti::splitImageToHSI splitter;
 
         // TODO: make image to load be extracted from command line parameters
-        loader.load("lena.bmp", img);
+        loader.load("block.bmp", img);
 
         splitter.getIntensity(img, src);
 
@@ -235,14 +235,19 @@ namespace app {
         int gy = 0;
         int sum = 0;
         int alpha = 0;
+        int srcPoint = 0;
 
         for (int y = 1; y < sPic.rows() - 1; ++y) {
             for (int x = 1; x < sPic.columns() - 1; ++x) {
+                srcPoint = sPic[y][x];
                 gx = riparoo::xGradient(sPic, x, y);
                 gy = riparoo::yGradient(sPic, x, y);
-                sum = std::abs(gx) + std::abs(gy);
+                //sum = std::abs(gx) + std::abs(gy);
+                sum = std::sqrt(std::pow(static_cast<double>(gx), 2.0) + std::pow(static_cast<double>(gy), 2.0));
                 sum = o3::clamp(sum, 0, 255);
-                GradientPic[y][x] = sum;
+                GradientPic[y][x] = //o3::clamp(srcPoint - std::abs(sum), 0, 255);
+                    //std::abs(sum);
+                    o3::clamp(sum, 0, 255);
                 alpha = std::atan2(static_cast<double>(gy),
                                    static_cast<double>(gy));
                 DirectionPic[y][x] = alpha;

@@ -22,12 +22,12 @@ namespace app {
 
     namespace riparoo {
         O3_FORCE_INLINE int xGradient(lti::channel8 const &img, int x, int y) {
-            return img[y - 1][x - 1] +
-                   2 * img[y][x - 1] +
-                   img[y + 1][x - 1] -
+            return img[y + 1][x + 1] +
+                   2 * img[y][x + 1] +
                    img[y - 1][x + 1] -
-                   2 * img[y][x + 1] -
-                   img[y + 1][x + 1];
+                   img[y + 1][x - 1] -
+                   2 * img[y][x - 1] -
+                   img[y - 1][x - 1];
         }
 
         O3_FORCE_INLINE int yGradient(lti::channel8 const &img, int x, int y) {
@@ -35,7 +35,8 @@ namespace app {
                    2 * img[y - 1][x] +
                    img[y - 1][x + 1] -
                    2 * img[y + 1][x] -
-                   img[y + 1][x + 1];
+                   img[y + 1][x + 1] -
+                   img[y + 1][x - 1];
         }
 
     }
