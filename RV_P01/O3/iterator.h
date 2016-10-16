@@ -141,9 +141,9 @@ namespace o3 {
     }
 } // END of namespace o3
 
-#define O3_BEGIN_END(arg)     (o3::begin((arg)), o3::end((arg)))
-#define O3_CBEGIN_CEND(arg)   (o3::cbegin((arg)), o3::cend((arg)))
-#define O3_RBEGIN_REND(arg)   (o3::rbegin((arg)), o3::rend((arg)))
-#define O3_CRBEGIN_CREND(arg) (o3::crbegin((arg)), o3::crend((arg)))
+#define O3_BEGIN_END(arg)     o3::begin((arg)), o3::end((arg))
+#define O3_CBEGIN_CEND(arg)   o3::cbegin((arg)), o3::cend((arg))
+#define O3_RBEGIN_REND(arg)   o3::rbegin((arg)), o3::rend((arg))
+#define O3_CRBEGIN_CREND(arg) o3::crbegin((arg)), o3::crend((arg))
 
 #endif // O3LIB_ITERATOR_H
