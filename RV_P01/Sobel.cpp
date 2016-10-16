@@ -1,10 +1,20 @@
+#ifndef _USE_MATH_DEFINES
+#   define _USE_MATH_DEFINES
+#endif
 #include <cmath> // std::pow, std::atan2
 #include "O3/macros.h" // O3_FORCE_INLINE, O3_IN, O3_OUT
 #include "O3/algorithm.h" // o3::clamp
-#include "utils.h" // MIN_GRAYSCALE, MAX_GRAYSCALE
+#include "utils.h" // MIN_GRAYSCALE, MAX_GRAYSCALE, isNegative
 #include "Sobel.h"
 
 namespace app {
+    static long double const pi = 
+#ifdef M_PI
+        static_cast<long double>(M_PI);
+#else
+        3.14159265358979323846L;
+#endif
+
     //! calculates the square of the value passed into the parameter and returns the result.
     O3_FORCE_INLINE double square(double val) {
         return std::pow(val, 2.0);
@@ -44,9 +54,20 @@ namespace app {
                img[y - 1][x + 1];  // top right position in the filter mask
     }
 
+    //! returns val + 360 if val is negative; val otherwise
+    O3_FORCE_INLINE long double fixForAtan2(long double val) {
+        static long double addThis = 360.0L;
+        if (isNegative(val)) {
+            return val + addThis;
+        }
+        return val;
+    }
+
     void sobelImpl(O3_IN lti::channel8 const &sPic, // the source image 
                    O3_OUT lti::channel8 &gradientPic, // the gradient output image
                    O3_OUT lti::channel8 &directionPic) { // the direction output image
+
+        static long double const directionMultiplier = 180.0L / pi;
 
         int const rows = sPic.rows(); // get the rows
         int const columns = sPic.columns(); // get the columns
@@ -67,8 +88,9 @@ namespace app {
 
                 // write alpha to the directionPic; alpha = arctan(gy / gx) 
                 directionPic[y][x] = static_cast<lti::ubyte>(
-                                         std::atan2(static_cast<long double>(gy),
-                                                    static_cast<long double>(gx)));
+                                         std::atan2(fixForAtan2(gy),
+                                                    fixForAtan2(gx)) * directionMultiplier
+                                     );
             }
         }
     } // END of function sobelImpl

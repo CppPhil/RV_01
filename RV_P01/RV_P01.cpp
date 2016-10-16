@@ -4,6 +4,7 @@
 #include <ltiSplitImageToHSI.h>
 #include <gtk.h>
 #include <ltiGtkServer.h>
+#include <ltiJPEGFunctor.h> // saveJPEG
 #include "utils.h" // app::keepWindowOpen
 #include "Median.h" // app::median
 #include "Sobel.h"
@@ -12,6 +13,13 @@
 
 namespace app {
     void RvP01::operator()(int argc, O3_IN char **argv) {
+        std::string resultsFolder(argv[0]);
+        std::string::size_type pos = resultsFolder.find_last_of("\\/");
+        resultsFolder = resultsFolder.substr(0, pos);
+        resultsFolder += std::string("/results/");
+
+        lti::saveJPEG imgSaver;
+
         // start the gtkServer
         lti::gtkServer server;
         server.start();
@@ -60,15 +68,25 @@ namespace app {
         // get the maskY
         int maskY = action.maskY; // mask y size
 
+        std::string saveTo(resultsFolder + action.file);
+        std::string::size_type saveToPos = saveTo.find_last_of(".");
+        saveTo = saveTo.substr(0, saveToPos);
+        
         switch (action.filter) {
             case Filter::Median :
                 Median(src, dst, maskX, maskY); // run median
                 viewTransformed.show(dst);      // show the result of median
+                imgSaver.save(saveTo + std::string("_Median_") + toString(maskX) + std::string("x") + toString(maskY) + std::string(".jpg"),
+                              dst);
                 break;
             case Filter::Sobel :
                 Sobel(src, gradient, direction); // run sobel
                 viewGradient.show(gradient);     // show the resulting gradient image 
-                viewDirection.show(direction);   // show the resulting direction image                              
+                viewDirection.show(direction);   // show the resulting direction image
+                imgSaver.save(saveTo + "_Gradient.jpg",
+                              gradient);
+                imgSaver.save(saveTo + "_Direction.jpg",
+                              direction);
                 break;            
             default:
                 break;
