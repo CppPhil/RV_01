@@ -67,8 +67,8 @@ namespace app {
 
                 // write alpha to the directionPic; alpha = arctan(gy / gx) 
                 directionPic[y][x] = static_cast<lti::ubyte>(
-                                         std::atan2(static_cast<double>(gy),
-                                                    static_cast<double>(gy)));
+                                         std::atan2(static_cast<long double>(gy),
+                                                    static_cast<long double>(gx)));
             }
         }
     } // END of function sobelImpl
